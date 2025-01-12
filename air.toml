@@ -1,0 +1,13 @@
+# .air.toml
+root = "."
+
+[build]
+cmd = "go build -o tmp server.go"
+include = ["*.go"]
+exclude = ["tmp", "vendor"]
+
+[color]
+main = "yellow"
+watcher = "cyan"
+build = "green"
+log = "white"
