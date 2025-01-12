@@ -8,6 +8,7 @@ import (
 func main() {
 	e := echo.New()
 
+	e.Static("/static", "static")
 	e.GET("/", func(c echo.Context) error {
 		return templates.HomePage().Render(c.Request().Context(), c.Response().Writer)
 	})
