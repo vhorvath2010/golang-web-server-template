@@ -1,3 +1,3 @@
 dev:
-	go build -o bin/main.exe main.go
-	bin/main.exe
+	go build -o bin/server.exe server.go
+	bin/server.exe
